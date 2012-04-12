@@ -1,4 +1,8 @@
 require "cuuid"
 
 # For compatibility with the UUID gem
-UUID = CUUID
+module UUID
+  def self.generate
+    CUUID.generate.downcase
+  end
+end
