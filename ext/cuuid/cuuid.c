@@ -10,7 +10,7 @@ void Init_cuuid();
 // Prototype CUUID.generate
 VALUE method_generate();
 
-// Define CUUID and the fact it has a class method called uuid1
+// Define CUUID and the fact it has a class method called generate
 void Init_cuuid() {
   CUUID = rb_define_module("CUUID");
   int arg_count = 0;
@@ -22,8 +22,8 @@ VALUE method_generate(VALUE self) {
   uuid_t uuid_id;
   char uuid_str[128];
 
+  // Generate UUID and grab string version of it
   uuid_generate(uuid_id);
-
   uuid_unparse(uuid_id, uuid_str);
 
   // Cast it into a ruby string and return it

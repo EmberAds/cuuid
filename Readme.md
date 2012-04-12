@@ -12,6 +12,8 @@ Or if you've required `"cuuid/uuid"` then you can just do
 
 ## Installation
 
+It'll work out the box on OS X. Ubuntu requires `uuid-dev` apt package installing.
+
 Rubygem install:
 
     gem install cuuid
