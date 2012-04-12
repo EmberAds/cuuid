@@ -12,8 +12,8 @@ VALUE method_generate();
 
 // Define CUUID and the fact it has a class method called generate
 void Init_cuuid() {
-  CUUID = rb_define_module("CUUID");
   int arg_count = 0;
+  CUUID = rb_define_module("CUUID");
   rb_define_module_function(CUUID, "generate", method_generate, arg_count);
 }
 
