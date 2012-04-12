@@ -13,6 +13,7 @@ spec = Gem::Specification.new do |s|
   s.extensions = FileList["ext/**/extconf.rb"]
 
   s.add_development_dependency "rake-compiler"
+  s.add_development_dependency "rspec"
   s.has_rdoc = false
 end
 
