@@ -8,7 +8,7 @@ VALUE CUUID = Qnil;
 void Init_cuuid();
 
 // Prototype CUUID.generate
-VALUE method_generate();
+static VALUE method_generate();
 
 // Define CUUID and the fact it has a class method called generate
 void Init_cuuid() {
