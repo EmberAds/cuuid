@@ -18,7 +18,7 @@ void Init_cuuid() {
 }
 
 // Implement CUUID.generate
-VALUE method_generate(VALUE self) {
+static VALUE method_generate(VALUE self) {
   uuid_t uuid_id;
   char uuid_str[128];
 
