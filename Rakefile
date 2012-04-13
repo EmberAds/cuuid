@@ -3,7 +3,7 @@ require "rubygems/package_task"
 
 spec = Gem::Specification.new do |s|
   s.name = "cuuid"
-  s.version = "0.3.0"
+  s.version = "0.3.1"
   s.author = "Caius Durling"
   s.email = "caius@emberads.com"
   s.homepage = "http://github.com/EmberAds/cuuid"
