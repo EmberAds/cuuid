@@ -1,6 +1,7 @@
 *.so
 *.bundle
 *.o
+*.jar
 pkg
 tmp
 .DS_Store
