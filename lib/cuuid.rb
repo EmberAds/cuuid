@@ -4,7 +4,8 @@ module CUUID
 
   if RUBY_PLATFORM["java"]
     require "jruby"
-    import 'com.emberads.cuuid'
+    include_package 'com.emberads.cuuid'
+    Generator = Java::ComEmberadsCuuid::Generator
   end
 
   # backwards compatible (& lazy)
