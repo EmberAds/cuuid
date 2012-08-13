@@ -14,7 +14,7 @@ static VALUE method_cuuid_generator_generate(VALUE self);
 void Init_cuuid_generator() {
   CUUID = rb_define_module("CUUID");
   CUUIDGenerator = rb_define_module_under(CUUID, "Generator");
-  rb_define_singleton_method(CUUIDGenerator, "generate", method_cuuid_generator_generate, 0);
+  rb_define_module_function(CUUIDGenerator, "generate", method_cuuid_generator_generate, 0);
 }
 
 // Implement CUUID.generate
