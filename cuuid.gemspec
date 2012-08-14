@@ -1,6 +1,8 @@
+require File.expand_path("lib/cuuid/version", File.dirname(__FILE__))
+
 Gem::Specification.new do |s|
   s.name = "cuuid"
-  s.version = "0.3.1"
+  s.version = CUUID::VERSION
   s.author = "Caius Durling"
   s.email = "caius@emberads.com"
   s.homepage = "http://github.com/EmberAds/cuuid"
