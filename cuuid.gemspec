@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
     s.extensions = Dir["ext/**/extconf.rb"]
   end
 
+  s.add_development_dependency "rake"
   s.add_development_dependency "rake-compiler"
   s.add_development_dependency "rspec"
   s.has_rdoc = false
