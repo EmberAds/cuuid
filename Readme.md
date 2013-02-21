@@ -10,9 +10,13 @@ Or if you've required `"cuuid/uuid"` then you can just do
 
     UUID.generate # => "08146761-57BF-46C9-A55B-1B49103AA08B"
 
-## Installation
+## Dependencies
 
-It'll work out the box on OS X. Ubuntu requires `uuid-dev` apt package installing.
+* **OS X** - works out the box. Just install and go.
+* **Ubuntu/Debian** - requires the uuid-dev package installing. (`apt-get install uuid-dev`)
+* **Other OS'** - You'll need to install [libuuid](http://git.kernel.org/?p=fs/ext2/e2fsprogs.git;a=tree;f=lib/uuid) and have the headers available for the gem to compile against.
+
+## Installation
 
 Rubygem install:
 
